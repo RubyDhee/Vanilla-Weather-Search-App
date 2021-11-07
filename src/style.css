@@ -1,10 +1,15 @@
 body {
-  background: blueviolet;
+  background: radial-gradient(
+    circle at 5.7% 50%,
+    rgba(218, 132, 247, 0.71) 29.5%,
+    rgba(248, 193, 119, 0.8) 90.5%
+  );
   font-family: "Courier New", Courier, monospace;
 }
 
-h2 {
-  color: blueviolet;
+h1 {
+  color: #6e386e;
+  margin-bottom: 0px;
 }
 li {
   list-style: none;
@@ -19,9 +24,28 @@ small {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid blueviolet;
+  border: 1px solid #fdffcd;
   border-radius: 20px;
 }
 .searchCity {
   margin-bottom: 20px;
+}
+
+#weather-details {
+  margin: 20px 0px;
+}
+.current-temperature img {
+  margin-right: 5px;
+  float: left;
+}
+.current-temperature strong {
+  color: #ca4b7c;
+  font-size: 64px;
+  line-height: 1;
+  padding-left: 10px;
+}
+.current-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
 }
