@@ -10,19 +10,33 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla Weather Search</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app">
+        <form class="searchCity">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            autofocus="on"
+            autocomplete="off"
+            id="searchCity"
+          />
+          <input
+            type="submit"
+            class="btn btn-secondary btn-sm"
+            value="Search"
+          />
+        </form>
         <div class="row">
-          <div class="col-6">
-            <h2>Marseille</h2>
-          </div>
+          <div class="col-6"><h2>Marseille</h2></div>
           <div class="col-6">
             <h1>21°C|°F</h1>
           </div>
+          <p class="current-weather"><img src="files/sun.png" width="75" /></p>
         </div>
         <ul>
           <li>Sunday 18:47</li>
@@ -30,13 +44,14 @@
           <li>humidity: <span>42%</span></li>
           <li>wind: <span>15 km/h</span></li>
         </ul>
-      </div>
-      <small
-        ><a href="https://github.com/RubyDhee/Vanilla-Weather-Search-App">
-          open source code</a
+
+        <small
+          ><a href="https://github.com/RubyDhee/Vanilla-Weather-Search-App">
+            open source code</a
+          >
+          by RubyDhee</small
         >
-        by RubyDhee</small
-      >
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
