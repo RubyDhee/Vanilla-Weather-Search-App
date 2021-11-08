@@ -20,13 +20,13 @@ small {
 }
 
 .weather-app {
-  background-color: #fdffcd;
+  background-color: #fcfefe;
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #fdffcd;
+  border: 1px solid #fcfefe;
   border-radius: 20px;
-  box-shadow: 3px 3px 2px 1px #d9dad7;
+  box-shadow: 3px 3px 10px 0px #7c808c;
 }
 .searchCity {
   margin-bottom: 20px;
@@ -38,6 +38,8 @@ small {
 .current-temperature img {
   margin-right: 5px;
   float: left;
+  height: 64px;
+  width: 64px;
 }
 .current-temperature strong {
   color: #ca4b7c;
