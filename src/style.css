@@ -26,6 +26,7 @@ small {
   padding: 20px;
   border: 1px solid #fdffcd;
   border-radius: 20px;
+  box-shadow: 3px 3px 2px 1px #d9dad7;
 }
 .searchCity {
   margin-bottom: 20px;
