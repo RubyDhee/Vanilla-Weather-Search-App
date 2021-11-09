@@ -9,13 +9,13 @@ function formatDate(timestamp) {
     minutes = `0 ${minutes}`;
   }
   let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+    "sunday",
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
   ];
   let day = days[date.getDay()];
   return `${day} ${hours}: ${minutes}`;
@@ -44,10 +44,21 @@ function showTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let city = "Marseille";
-let units = "metric";
-let apiKey = "5354b60afda2b7800186c06153932396";
-let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
-let apiUrl = `${apiEndpoint}?q=${city}&appid=${apiKey}&units=${units}`;
+function search(city) {
+  let apiKey = "5354b60afda2b7800186c06153932396";
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
+  let apiUrl = `${apiEndpoint}?q=${city}&appid=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(showTemperature);
+  axios.get(apiUrl).then(showTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#insert-city");
+  search(cityInputElement.value);
+}
+
+search("Skopje");
+
+let form = document.querySelector(".searchCity");
+form.addEventListener("submit", handleSubmit);
