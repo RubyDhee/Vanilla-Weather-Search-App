@@ -1,15 +1,23 @@
 body {
-  background: radial-gradient(
-    circle at 5.7% 50%,
-    rgba(218, 132, 247, 0.71) 29.5%,
-    rgba(248, 193, 119, 0.8) 90.5%
+  background: linear-gradient(
+    110.6deg,
+    rgb(184, 142, 252) 2.2%,
+    rgb(104, 119, 244) 100.2%
   );
   font-family: "Courier New", Courier, monospace;
 }
 
 h1 {
   color: #6e386e;
+  font-weight: bold;
   margin-bottom: 0px;
+}
+a {
+  color: #6e386e;
+  text-decoration: none;
+}
+a:hover {
+  color: #ca4b7c;
 }
 li {
   list-style: none;
@@ -23,20 +31,19 @@ small {
   background-color: #fcfefe;
   max-width: 600px;
   margin: 30px auto;
-  padding: 20px;
+  padding: 50px 50px 10px;
   border: 1px solid #fcfefe;
   border-radius: 20px;
-  box-shadow: 3px 3px 10px 0px #7c808c;
+  box-shadow: 5px 5px 10px 0px #363636;
 }
 .searchCity {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #weather-details {
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 .current-temperature img {
-  margin-right: 5px;
   float: left;
   height: 64px;
   width: 64px;
@@ -51,4 +58,9 @@ small {
   position: relative;
   font-size: 16px;
   top: -34px;
+}
+.current-temperature .active {
+  color: black;
+  text-decoration: none;
+  cursor: default;
 }
