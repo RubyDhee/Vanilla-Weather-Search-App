@@ -22,7 +22,7 @@
             <div class="col-9">
               <input
                 type="search"
-                placeholder="Enter a city"
+                placeholder="enter a city"
                 class="form-control"
                 autofocus="on"
                 autocomplete="off"
@@ -33,20 +33,26 @@
               <input
                 type="submit"
                 class="btn btn-secondary w-100"
-                value="Search"
+                value="search"
               />
             </div>
           </div>
         </form>
         <h1 class="city"></h1>
-        <span id="date"></span>
+        last updated: <span id="date"></span>
         <div class="row" id="weather-details">
           <div class="col-6">
             <div class="clearfix current-temperature">
               <img src="files/sun.png" alt="clear" width="50" id="icon" />
               <div class="float-left">
                 <strong id="temperature">21</strong
-                ><span class="units">°C|<a href="#">°F</a></span>
+                ><span class="units"
+                  ><a href="#" id="convert-celsius" class="active">°C</a>|<a
+                    href="#"
+                    id="convert-fahrenheit"
+                    >°F</a
+                  ></span
+                >
               </div>
             </div>
           </div>
@@ -61,9 +67,9 @@
 
         <small
           ><a href="https://github.com/RubyDhee/Vanilla-Weather-Search-App">
-            open source code on GitHub</a
+            open source code on github</a
           >
-          by RubyDhee and hosted on Netlify</small
+          by rubydhee and hosted on netlify</small
         >
       </div>
     </div>
